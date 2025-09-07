@@ -11,7 +11,7 @@
     h1{font-size:1.8rem;margin:.2rem 0 1rem}
     h2{font-size:1.2rem;margin:1.4rem 0 .6rem}
     p,li{font-size:1rem}
-    small, .muted{color:var(--muted)}
+    small,.muted{color:var(--muted)}
     a{color:var(--accent);word-break:break-word}
     code{background:#f5f5f7;padding:.1rem .3rem;border-radius:.35rem}
     ul{margin:.2rem 0 .8rem 1.1rem}
@@ -22,83 +22,61 @@
 <body>
 <main>
   <h1>Datenschutzerklärung – Foto Ordner (Android)</h1>
-  <p class="muted"><strong>Stand:</strong> 05.09.2025</p>
+  <p class="muted"><strong>Stand:</strong> 07.09.2025</p>
 
   <h2>1. Verantwortlicher / Kontakt</h2>
   <p><strong>Bernhard Messerli</strong><br>
      E-Mail: <a href="mailto:bernhard.messerli.5@gmail.com">bernhard.messerli.5@gmail.com</a></p>
 
   <h2>2. Zweck der App</h2>
-  <p>Die App „Foto Ordner“ organisiert Fotos auf Ihrem Gerät und kann – auf Ihren ausdrücklichen Wunsch – Dateien zwischen Ihrem Gerät und Ihrem <strong>eigenen Google Drive</strong> kopieren (Backup/Wiederherstellung). Es werden <strong>keine</strong> Fotos an Server des Entwicklers übertragen.</p>
+  <p>Die App „Foto Ordner“ ermöglicht das <strong>lokale</strong> Aufnehmen, Anzeigen, Organisieren und Löschen von Fotos direkt auf Ihrem Android-Gerät. Die App funktioniert <strong>offline</strong> und verwendet die <strong>Android Storage Access Framework (SAF)</strong>, sodass Sie explizit die Ordner auswählen, auf die die App zugreifen darf.</p>
 
   <h2>3. Welche Daten verarbeiten wir?</h2>
+  <p>Die App verarbeitet <strong>keine personenbezogenen Daten</strong> im Sinne von Namen, Kontaktdaten, Identifikatoren oder Nutzungsprofilen. Es gibt <strong>keine Serverkommunikation</strong>, keine Kontoregistrierung und keine Analyse-/Tracking-Dienste.</p>
   <ul>
-    <li><strong>E-Mail-Adresse des Google-Kontos</strong> (über Google Sign-In) – zur Anzeige des verbundenen Kontos und für die Verbindung mit Google Drive.</li>
-    <li><strong>Lokale App-Einstellungen</strong> (z.&nbsp;B. ausgewählter Ordner/Drive-Ordner-ID, Tokens): werden <strong>nur lokal</strong> auf dem Gerät gespeichert.</li>
-    <li><strong>Fotos/Dateien</strong>: bleiben auf Ihrem Gerät bzw. in Ihrem <strong>eigenen</strong> Google-Drive-Konto; wir sammeln diese nicht.</li>
+    <li><strong>Dateizugriff lokal:</strong> Nur auf die von Ihnen über die Systemauswahl (SAF) freigegebenen Ordner/Dateien. Inhalte bleiben auf Ihrem Gerät.</li>
+    <li><strong>Lokale App-Einstellungen:</strong> z. B. gemerkte Ordner-Freigaben (URI-Rechte) und optionale Bildkommentare (als Sidecar-Datei) werden ausschließlich lokal gespeichert.</li>
   </ul>
 
-  <h2>4. Rechtsgrundlagen (DSGVO/UK GDPR/CH-DSG)</h2>
-  <ul>
-    <li><strong>Vertragserfüllung / Erbringung der Dienstleistung</strong> (Art. 6 Abs. 1 lit. b DSGVO): Verbindung mit Ihrem Google-Konto und Durchführung der von Ihnen initiierten Sicherungen/Wiederherstellungen.</li>
-    <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO): wenn Sie Google Drive verbinden.</li>
-  </ul>
+  <h2>4. Rechtsgrundlage</h2>
+  <p>Die Verarbeitung erfolgt zur <strong>Erbringung der angefragten Funktion</strong> (Art. 6 Abs. 1 lit. b DSGVO): Anzeige, Organisation und Verwaltung Ihrer lokal gespeicherten Fotos nach Ihrer Anweisung.</p>
 
   <h2>5. Speicherdauer / Löschung</h2>
-  <p>E-Mail/Token/Ordner-IDs werden <strong>ausschließlich lokal</strong> gespeichert und bei <strong>Abmeldung</strong> oder <strong>Deinstallation</strong> gelöscht. Dateien in Google Drive verbleiben dort, bis Sie sie löschen.</p>
-
-  <h2 id="datenloeschung">Datenlöschung</h2>
-  <p>Die App speichert lokal nur die Google-Konto-E-Mail und Zugriffstokens, solange Sie angemeldet sind. Sie können diese Daten jederzeit entfernen:</p>
   <ul>
-    <li><strong>Abmelden</strong> in der App – entfernt lokal gespeicherte E-Mail/Token</li>
-    <li>App <strong>deinstallieren</strong> – entfernt alle lokalen App-Daten</li>
-    <li><strong>Backups löschen</strong> – direkt in Ihrer Google-Drive-App/auf der Website</li>
-    <li><strong>Zugriff widerrufen</strong> – <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
-  </ul>
-  <p>Alternativ können Sie eine Anfrage per E-Mail stellen:
-    <a href="mailto:bernhard.messerli.5@gmail.com">bernhard.messerli.5@gmail.com</a>.
-  </p>
-
-  <h2>6. Drittanbieter &amp; Übermittlungen</h2>
-  <p>Wir nutzen Dienste von <strong>Google LLC</strong> ausschließlich zur Bereitstellung der gewünschten Funktionen:</p>
-  <ul>
-    <li><strong>Google Sign-In</strong> (Authentifizierung, E-Mail)</li>
-    <li><strong>Google Drive API</strong> (Datentransfer Gerät &harr; Ihr Google Drive) mit Minimal-Berechtigung <code>drive.file</code></li>
-  </ul>
-  <p>Die Kommunikation mit Google erfolgt über <strong>HTTPS</strong>. Wir betreiben <strong>keine</strong> eigenen Server für Ihre Inhalte und <strong>verkaufen/teilen</strong> Ihre Daten nicht mit Dritten.</p>
-
-  <h2>7. Sicherheit</h2>
-  <ul>
-    <li><strong>Transportverschlüsselung</strong> (HTTPS) bei Google-Diensten</li>
-    <li><strong>Prinzip der geringstmöglichen Rechte</strong> (<code>drive.file</code>)</li>
-    <li><strong>Lokale Speicherung</strong> sensibler Daten (keine Server-Persistenz)</li>
+    <li><strong>Lokale Einstellungen &amp; Freigaben:</strong> verbleiben auf dem Gerät und werden bei Entfernen der Freigabe, Zurücksetzen der App-Daten oder <strong>Deinstallation</strong> gelöscht.</li>
+    <li><strong>Fotos &amp; Kommentare:</strong> verbleiben in den von Ihnen gewählten lokalen Ordnern, bis Sie diese löschen.</li>
   </ul>
 
-  <h2>8. Ihre Rechte</h2>
-  <p>Sie haben je nach Rechtsordnung insbesondere Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Kontakt: <a href="mailto:bernhard.messerli.5@gmail.com">bernhard.messerli.5@gmail.com</a>.</p>
-  <div class="card">
-    <p><strong>Schnell-Aktionen:</strong></p>
-    <ul>
-      <li><strong>Abmelden</strong> in der App: löscht lokal gespeicherte E-Mail/Token.</li>
-      <li><strong>Zugriff widerrufen</strong>: <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a></li>
-      <li><strong>Backups löschen</strong>: direkt in der Google-Drive-App/Website.</li>
-    </ul>
-  </div>
+  <h2 id="datenloeschung">6. Datenlöschung &amp; Kontrolle</h2>
+  <ul>
+    <li>Sie können Ordnerfreigaben jederzeit über die Systemauswahl (SAF) <strong>entziehen</strong>.</li>
+    <li>Sie können Dateien in der App oder mit anderen Dateimanagern <strong>löschen</strong>.</li>
+    <li>Durch <strong>Deinstallation</strong> werden alle lokalen App-Daten entfernt.</li>
+  </ul>
 
-  <h2>9. Kinder/Jugendschutz</h2>
+  <h2>7. Drittanbieter</h2>
+  <p>Keine. Die App nutzt <strong>keine</strong> Cloud-Dienste, keine Authentifizierung externer Anbieter, keine Analyse-SDKs und sendet <strong>keine</strong> Inhalte an Server.</p>
+
+  <h2>8. Sicherheit</h2>
+  <ul>
+    <li><strong>Prinzip der geringstmöglichen Rechte:</strong> Zugriff nur auf die von Ihnen explizit freigegebenen Ordner (SAF).</li>
+    <li><strong>Keine Übertragung</strong> Ihrer Inhalte über das Internet durch diese App.</li>
+  </ul>
+
+  <h2>9. Ihre Rechte</h2>
+  <p>Je nach Rechtsordnung haben Sie Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Da diese App keine personenbezogenen Daten an den Entwickler übermittelt, können Sie Anfragen direkt per E-Mail stellen: <a href="mailto:bernhard.messerli.5@gmail.com">bernhard.messerli.5@gmail.com</a>.</p>
+
+  <h2>10. Kinder/Jugendschutz</h2>
   <p>Die App richtet sich nicht an Kinder unter 13 Jahren und sammelt wissentlich keine Daten von Kindern.</p>
 
-  <h2>10. Push/Marketing/Analytics</h2>
-  <p>Keine Werbung, kein E-Mail-Marketing, keine Web-/Mobile-Analytics (z.&nbsp;B. Google Analytics), keine Social-Plugins.</p>
+  <h2>11. Push/Marketing/Analytics</h2>
+  <p>Keine Werbung, kein Marketing, keine Push-Benachrichtigungen, keine Web-/Mobile-Analytics.</p>
 
-  <h2>11. Änderungen</h2>
-  <p>Wir können diese Erklärung anpassen. Maßgeblich ist die jeweils veröffentlichte Fassung mit Datum.</p>
-
-  <h2>12. Anfragen zu Datenschutz/DSAR</h2>
-  <p>Für Auskunft, Berichtigung oder Löschung schreiben Sie an <a href="mailto:bernhard.messerli.5@gmail.com">bernhard.messerli.5@gmail.com</a>. Bitte geben Sie die betroffene App („Foto Ordner“) an.</p>
+  <h2>12. Änderungen</h2>
+  <p>Diese Erklärung kann aktualisiert werden. Es gilt die jeweils veröffentlichte Fassung mit Datum.</p>
 
   <hr>
-  <p class="muted">Hinweis: „Google“, „Google Drive“ und verwandte Marken sind Marken der Google LLC.</p>
+  <p class="muted">Hinweis: Android, Google Play und Android-Marken sind Marken von Google LLC.</p>
 </main>
 </body>
 </html>
